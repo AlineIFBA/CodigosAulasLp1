@@ -1,5 +1,5 @@
 package IntroducaoPoo.aula02;
-
+//Classe elaborada como exercício
 public class Data {
  
     private int dia;

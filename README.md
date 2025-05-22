@@ -1,38 +1,18 @@
-# Códigos de Aula – Linguagem de Programação I
+## Getting Started
 
-Este repositório reúne os exemplos de código utilizados nas aulas da disciplina **Linguagem de Programação I**, ministrada pela professora **Aline Silva Costa**.
-Os códigos são organizados por pacotes e temas abordados ao longo do semestre.
----
+Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Como baixar os códigos
-Você pode baixar o conteúdo deste repositório de duas maneiras:
+## Folder Structure
 
-### 1. Baixar como ZIP (mais fácil para iniciantes)
-1. Acesse o link do repositório:
-[https://github.com/AlineIFBA/CodigosAulasLp1](https://github.com/AlineIFBA/CodigosAulasLp1)
-2. Clique no botão verde **"Code"**.
-3. Escolha a opção **"Download ZIP"**.
-4. Extraia o arquivo `.zip` em uma pasta do seu computador.
-5. Abra a pasta extraída no VS Code (ou em outro editor de sua preferência).
+The workspace contains two folders by default, where:
 
----
+- `src`: the folder to maintain sources
+- `lib`: the folder to maintain dependencies
 
-### 2. Clonar o repositório (recomendado para quem já conhece Git)
-Se você já tem o Git instalado, pode clonar diretamente com o comando:
-git clone https://github.com/AlineIFBA/CodigosAulasLp1.git
+Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-## Estrutura de pastas
-O workspace contém as pastas:
-- src: a pasta que mantém os arquivos fonte (arquivos .java)
-- lib: a pasta que mantém dependências
-- bin: pasta onde os arquivos de saída compilados são armazenados por padrão
-  
-## Estrutura de pacotes
-O projeto foi dividido em 4 pacotes, "recursividade" e "IntroducaoPoo", "ComposicaoOO" e "Heranca":
-- pacote recursividade - Contém última versão dos códigos fonte trabalhados nas aulas de Recursividade com comentários explicativos
-- pacote IntroducaoPOO - Contém versões dos códigos fonte trabalhados nas aulas de POO antes de Composição, com ou sem comentários explicativos. A última atualização será a versão comentada
-- pacote ComposicaoPOO - Pacote será ainda criado e irá conter versões dos códigos fonte trabalhados nas aulas de Composição
-- pacote Heranca - Pacote será ainda criado e irá conter versões dos códigos fonte trabalhados nas aulas de Herança e Polimorfismo
+> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-  19/05/2025
+## Dependency Management
 
+The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
