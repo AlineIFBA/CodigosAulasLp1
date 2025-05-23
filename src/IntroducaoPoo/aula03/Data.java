@@ -1,6 +1,6 @@
 package IntroducaoPoo.aula03;
 
-/Classe elaborada como exercício
+//Classe elaborada como exercício
 public class Data {
  
     private int dia;
@@ -19,6 +19,43 @@ public class Data {
         this.dia = 1;
         this.mes = 1;
         this.ano = 2025;
+    }
+
+    /*Métodos que são respostas de exercícios passados na aula: */
+    public void imprimirExtenso(){
+        String saida="";
+        if (dia<10)//se só tem um dígito
+            saida+="0"+dia+" de ";
+        else
+            saida+=dia+" de ";
+        
+        saida+= getMesExtenso();
+        saida+=" de " +ano;
+        System.out.println("Data: "+saida);
+    }
+
+    private String getMesExtenso(){
+        String meses[]={"Janeiro","Fevereiro","Março",
+        "Abril","Maio","Junho","Julho","Agosto",
+        "Setembro","Outubro","Novembro","Dezembro" };
+        return meses[mes-1];                
+    }
+
+    public void imprimirDDMMAAAA(){
+       
+        String saida="";
+        if (dia<10)//se só tem um dígito
+            saida+="0"+dia+"/";
+        else
+            saida+=dia+"/";
+        if (mes<10)
+            saida+="0"+mes+"/";
+        else
+            saida+=mes+"/";
+        
+        saida+=ano;
+        return saida;
+        
     }
 
     public int getDia() {
