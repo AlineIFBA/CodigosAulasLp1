@@ -1,0 +1,36 @@
+RESPOSTAS DAS QUESTÕES OBJETIVAS DA LISTA DE EXERCÍCIOS DA UNIDADE 1
+
+2)Por que não é recomendado que as variáveis de instância de uma classe sejam public?
+RESPOSTA - Para preservar o princípio de ocultamento da informação. Uma classe usuária de outra não precisa conhecer detalhes da sua implementação, mas apenas a interface dos seus serviços (métodos). Com as variáveis de instância sendo private, há como garantir que elas sejam inicializadas ou atualizadas apenas com valores válidos.
+
+3)O que é a assinatura de um método?
+RESPOSTA - Nome do método com a lista de parâmetros.
+
+4)O que é sobrecarga de método?
+RESPOSTA - Definição de um ou mais métodos com mesmo nome de um método já existente, mas com lista de parâmetros diferente, na quantidade e/ou no tipo.
+
+5)“Um sistema de software orientado a objetos consiste de objetos em colaboração com o objetivo de realizar as funcionalidades deste sistema. Cada objeto é responsável por tarefas específicas. É através da cooperação entre objetos que a computação do sistema se desenvolve.” Numa classe, o que corresponde a essas tarefas específicas realizadas?
+RESPOSTA -São os métodos.
+
+6)“Para que um objeto realize alguma tarefa, deve haver um estímulo enviado a este objeto. Independentemente da origem do estímulo, quando ele ocorre, diz-se que o objeto em questão está recebendo uma mensagem.” Explique como ocorre esse envio de mensagem a um objeto e dê um exemplo em código.
+RESPOSTA - O envio de mensagem ocorre quando chamamos um método para aquele objeto.
+Exemplo: conta.imprimir(); //O objeto conta está recebendo uma mensagem
+
+7) Quando a palavra this é obrigatória dentro de um método na classe? Se necessário, exemplifique.
+RESPOSTA - Quando o nome da variável de instância tem o mesmo nome de alguma variável declarada dentro do método ou recebida como parâmetro, e deseja-se acessar a variável de instância.
+Exemplo:
+public class Exemplo{
+   private int variavel;//variável de instância
+   public void setVariavel(int variavel){
+   this.variavel=variavel; //Neste caso é obrigatório o uso do this
+   }
+}
+
+8) d. O que poderia ocorrer caso as variáveis de instância de Horario fossem public?
+RESPOSTA - Poderia ocorrer o acesso às variáveis diretamente pelo nome, sem usar os métodos get e set. Assim, valores inválidos poderiam ser atribuídos às variáveis, como minuto=100, hora=70.
+
+8) e.Elabore um método para somar dois horários: public static void soma (Horario horario1, Horario horario2). Não é para alterar os valores das variáveis de instância de horario1 e horario2. Apenas somar e imprimir. Este método poderia ser não static? Justifique.
+RESPOSTA - Poderia, mas para chamá-lo como método não static, um objeto da classe Horario deveria ser obrigatoriamente usado como handle. Ao invés de usar uma instrução como Horario.soma(h1,h2), seria usada a instrução h1.soma(h2)
+
+9) a.Seria possível este método também chamar-se soma já que o tipo de retorno é diferente? Por quê?
+RESPOSTA - Não. Porque para a sobrecarga de método é necessário que a lista de parâmetros seja diferente. Não basta que apenas o tipo de retorno seja diferente se todo o restante for igual.
