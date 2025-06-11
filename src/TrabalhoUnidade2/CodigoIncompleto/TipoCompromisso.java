@@ -19,3 +19,4 @@ public enum TipoCompromisso {
    public String getLabelTipo() {
       return labelTipo;
    } 
+}

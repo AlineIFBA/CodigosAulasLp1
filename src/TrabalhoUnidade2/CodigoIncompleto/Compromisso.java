@@ -79,8 +79,7 @@ public class Compromisso {
    }
    
    public String toString(){
-      return "";
-         
+      return "Compromisso: "+ this.getDescricao()+"\nCategoria: "+categoria.getNome();         
    }
 
    public int getId() {

@@ -48,6 +48,19 @@ public class Main {
       Conta conta3=new Conta();
       //A instrução abaixo vai gerar uma exceção se for removido o //. Por quê?
       // conta3.getCliente().setNome("Sandra");
+      /*Para não gerar exceção, conta3 precisa de um objeto cliente válido (diferente de null). Possibilidades:*/
+      //Instanciar um novo cliente e passá-lo como parâmetro de entrada para o método setCliente da conta3:
+      Cliente cliente3=new Cliente("Marta", "222");
+      conta3.setCliente(cliente3);
+
+      /*Isso também poderia ser feito com uma única instrução: */
+      //conta3.setCliente(new Cliente("Marta", "222"));
+
+      /*Poderia passar um cliente já criado anteriormente para a conta3:
+       * conta3.setCliente(cliente1);
+       * OU
+       * conta3.setCliente(c1.getCliente());
+      */
       
       //Exemplo de declaração de variável do tipo enum criado:
       TipoConta tipo= TipoConta.ESPECIAL;     

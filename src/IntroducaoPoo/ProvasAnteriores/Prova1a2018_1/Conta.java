@@ -48,8 +48,11 @@ public class Conta {
 
    //Questão 3.g)
    public void deposito(double valor){
-      this.saldo=this.saldo+valor;
-
+      this.saldo=this.saldo+valor;// saldo=saldo+valor; OU saldo+=valor; 
+      /*Poderia chamar setSaldo?
+       * Sim, qualquer método da classe pode ser chamado pela própria classe
+       * setSaldo(saldo+valor); 
+       * OU this.setSaldo(this.saldo+valor); */
 }
 
    //Questão 3.h)

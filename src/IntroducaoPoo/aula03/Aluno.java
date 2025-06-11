@@ -10,10 +10,8 @@ public class Aluno {
 
  
    public Aluno() {
-   
-
       nome=null;
-      matricula=0;   */   
+      matricula=0;     
       quantidade++;  
       this.matricula = quantidade; 
    }

@@ -10,6 +10,7 @@ public class Conta {
         this.numero = numero;
         this.cliente = cliente;
         this.tipoConta = tipoConta;
+        //this.saldo=0;
     }
 
     public Conta(String nome, String CPF, int numero, TipoConta tipoConta) {

@@ -56,7 +56,7 @@ public class Main {
                //System.out.println("Digite o nome da categoria deste compromisso:");
                nomeCategoria = input.nextLine();
 
-               controle.inserirCompromisso(descricao, tipoCompromisso, nomeCategoria, calendar);
+               //controle.inserirCompromisso(descricao, tipoCompromisso, nomeCategoria, calendar);
                break;
             case 2:
                System.out.println("Digite o nome da categoria:");
