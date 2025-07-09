@@ -23,8 +23,3 @@ public enum TipoConta {
 
 
 
-
-   
-
-
-}
