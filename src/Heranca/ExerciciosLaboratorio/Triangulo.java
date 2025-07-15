@@ -22,6 +22,9 @@ public class Triangulo extends Forma{
            
     }
 
+   public double area(){      
+         return base*altura;
+   }
     public int getAltura() {
         return altura;
     }

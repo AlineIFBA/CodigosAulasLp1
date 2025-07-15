@@ -15,8 +15,15 @@ public class FormaTeste {
         formas[1]=r;
         formas[2]=q;
         
-        for (Forma f:formas)
-            f.print();//Comportamento polimórfico
+        for (Forma f:formas){
+         f.print();//Comportamento polimórfico
+         if (f instanceof Triangulo){
+            Triangulo tri=(Triangulo)f;
+            System.out.println(tri.area());
+         }
+
+        }
+            
    
     }
     

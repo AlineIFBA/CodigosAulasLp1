@@ -13,9 +13,7 @@ public class ContaTeste {
         
         p.imprimeSaldo();
         p.deposito(0);//Valor inválido
-        p.deposito(500);
-
-        Conta c2=p;
+        p.deposito(500);       
         
         
         

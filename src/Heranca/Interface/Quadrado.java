@@ -7,7 +7,7 @@ package Heranca.Interface;
  */
 
  /*O tipo "Quadrado" dentro de "<>" especifica o tipo de Comparable. Isso se chama "Programação genérica" (não é assunto da disciplina, mas caso alguém se interesse pelo assunto agora, esse é o nome). Numa versão JDK mais antigo, será aceito apenas Comparable ao invés de Comparable<Tipo> */
-public class Quadrado implements Figura, Comparable<Quadrado> { 
+public class Quadrado implements Figura { 
    private double lado;
    
 
